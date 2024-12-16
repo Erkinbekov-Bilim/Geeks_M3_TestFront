@@ -34,14 +34,18 @@ const count = () => {
 
 count()
 
-
 // 4
 
-// const box = document.getElementById('colorBox');
-//
-// box.onclick(() => {
-//     box.classList.remove('active');
-// })
+const box = document.querySelector('#colorBox');
+
+const changeColor = () => {
+    box.classList.toggle('active');
+}
+
+box.addEventListener("click",() => {
+    changeColor();
+})
+
 
 // 5
 
